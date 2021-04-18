@@ -1,0 +1,10 @@
+
+articles.articles_controller_content:
+  path: '/articles'
+  defaults:
+    _controller: '\Drupal\articles\Controller\ArticlesController::content'
+    _title: 'Articles'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'

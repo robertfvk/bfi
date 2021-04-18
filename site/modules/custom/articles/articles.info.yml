@@ -1,0 +1,5 @@
+name: 'Articles'
+type: module
+description: 'Module to consume BFI articles api and display on the front end to a user'
+package: 'Custom'
+core_version_requirement: ^9

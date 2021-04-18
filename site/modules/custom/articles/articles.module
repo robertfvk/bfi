@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains articles.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function articles_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the articles module.
+    case 'help.page.articles':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to consume BFI articles api and display on the front end to a user') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function articles_theme() {
+  return [
+    'articles_page' => [
+      'variables' => [
+        'types' => NULL,
+        'items' => NULL,
+        'activeType' => NULL
+      ]
+    ],
+    'articles_item' => [
+      'variables' => [
+        'title' => NULL,
+        'summary' => NULL,
+        'article_type' => NULL,
+        'authors' => NULL,
+        'image' => NULL
+      ]
+    ]
+  ];
+}

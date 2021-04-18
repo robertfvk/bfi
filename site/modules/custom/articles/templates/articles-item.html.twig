@@ -1,0 +1,11 @@
+<div class="articles-item">
+  <h2>{{ title }}</h2>
+  <img src="{{ image.url }}" alt="{{ image.caption }}" />
+  <p class="summary"> {{ summary }}</p>
+  <p><strong>Type:</strong></p>
+  <span class="type"><a href="{{ url('<current>') }}?type={{ article_type.id }}">{{ article_type.name }}</a></span>
+  <p><strong>Author(s):</strong></p>
+  {% for author in authors %}
+    <span class="author"><a href="{{ url('<current>') }}?author={{ author.id }}">{{ author.name }}</a></span>
+  {% endfor %}
+</div>

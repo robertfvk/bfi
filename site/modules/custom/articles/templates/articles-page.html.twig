@@ -1,0 +1,18 @@
+
+<div class="filter-types">
+  <ul>
+    {% for type in types %}
+      <li><a href="{{ url('<current>') }}{{ (activeType == type.id) ? '' : '?type=' ~ type.id }}" class="{{ (activeType == type.id) ? 'active' : '' }}">{{ type.name }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="text-content">
+  <h2>Showing {{ items|length }} results</h2>
+</div>
+
+<div class="articles-wrapper">
+  {% for item in items %}
+    {{ item }}
+  {% endfor %}
+</div>

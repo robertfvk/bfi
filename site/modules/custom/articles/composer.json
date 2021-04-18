@@ -1,0 +1,13 @@
+{
+    "name": "articles",
+    "type": "drupal-module",
+    "description": "Module to consume BFI articles api and display on the front end to a user",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/articles",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/articles",
+        "source": "http://cgit.drupalcode.org/articles",
+    },
+}
