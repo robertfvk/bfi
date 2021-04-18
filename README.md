@@ -1,12 +1,12 @@
 ## BFI Technical task
 
-All of the programming for this task has been contained in a custom Drupal module called 'Articles' this is compressed in the root folder of the repository 'Articles.zip'.
+All of the programming for this task has been contained in a custom Drupal module called 'Articles', this is compressed in the root folder of the repository 'articles.zip'.
 
 ### Steps to install
 1. Create a website with a fresh Drupal 9 install.
 2. Enable the 'Olivero' theme and set as default.
-3. Move the 'Articles.zip' module from the repository root to the modules directory of your Drupal site and extract it's contents there.
-4. Go to the 'Extend' admin interface of your Drupal website or `/admin/modules` url. Install the 'Articles module'.
+3. Move the 'articles.zip' module from the repository root to the modules directory of your Drupal site and extract it's contents there.
+4. Go to the 'Extend' admin interface of your Drupal website or `/admin/modules` url. Install the 'Articles' module.
 5. Go to `/articles` url on your Drupal site and you should now see the articles pulled in via the API.
 
 **Note: This has been built using PHP version 7.3** 
